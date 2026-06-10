@@ -1,3 +1,6 @@
 TO-DO LIST:
 When a level up occurs, create a pop up that signifies it.
 Attempt to implement a moving hoop.
+
+COMPLETED:
+Task number one was done, I got assistnace from Ms.Orsun in making a pop up on the screen 
