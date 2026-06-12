@@ -3,7 +3,7 @@ let bg1;
 let bg2;
 let CannonIMG;
 let ballIMG;
-let bgMusic;
+
 
 // game state variables
 let shooting = false;
@@ -55,8 +55,6 @@ function preload() {
   bg2 = loadImage("IMG_1097.jpeg");
   CannonIMG = loadImage("IMG_1095-removebg-preview.png");
   ballIMG = loadImage("download-removebg-preview.png");
-
-  bgMusic = loadSound("Wii Shop Channel Main Theme (HQ).mp3");
 }
 // creates the canvas and centers all text
 function setup() {
