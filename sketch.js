@@ -3,6 +3,7 @@ let bg1;
 let bg2;
 let CannonIMG;
 let ballIMG;
+let msc=null;
 
 
 // game state variables
@@ -55,15 +56,21 @@ function preload() {
   bg2 = loadImage("IMG_1097.jpeg");
   CannonIMG = loadImage("IMG_1095-removebg-preview.png");
   ballIMG = loadImage("download-removebg-preview.png");
+  msc=loadSound("sound.mp3")
 }
 // creates the canvas and centers all text
 function setup() {
   createCanvas(600, 600);
   textAlign(CENTER, CENTER);
+  
+  msc.setVolume(0.5);
 }
 
 // runs every frame and shows the correct screen
 function draw() {
+   if (!msc.isPlaying()) {
+    msc.play();
+  }
   if (screen === "beginning") {
     StartScreen();
   } else if (screen === "instruct") {
@@ -287,6 +294,7 @@ function Sidetoside() {
 
 // handles all button clicks and taps
 function touchStarted() {
+
   for (let i = 0; i < buttons.length; i++) {
     let btn = buttons[i];
 
