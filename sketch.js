@@ -3,7 +3,7 @@ let bg1;
 let bg2;
 let CannonIMG;
 let ballIMG;
-let msc=null;
+
 
 
 // game state variables
@@ -62,15 +62,13 @@ function preload() {
 function setup() {
   createCanvas(600, 600);
   textAlign(CENTER, CENTER);
-  
-  msc.setVolume(0.5);
+
 }
+
 
 // runs every frame and shows the correct screen
 function draw() {
-   if (!msc.isPlaying()) {
-    msc.play();
-  }
+
   if (screen === "beginning") {
     StartScreen();
   } else if (screen === "instruct") {
