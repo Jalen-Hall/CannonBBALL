@@ -56,7 +56,6 @@ function preload() {
   bg2 = loadImage("IMG_1097.jpeg");
   CannonIMG = loadImage("IMG_1095-removebg-preview.png");
   ballIMG = loadImage("download-removebg-preview.png");
-  msc=loadSound("sound.mp3")
 }
 // creates the canvas and centers all text
 function setup() {
